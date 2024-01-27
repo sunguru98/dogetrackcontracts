@@ -1,0 +1,21 @@
+[features]
+seeds = false
+[programs.testnet]
+dogegamecontract = "GAmedvouiMuUop6UUvGe8L5wdAQaSwXa77JPxs87pYpE"
+doge-o = "2FJPtjHmYZBAeFLudMHFgQAq5vsEMW6uXhc8TqtVZvMS"
+[programs.devnet]
+dogegamecontract = "GAmedvouiMuUop6UUvGe8L5wdAQaSwXa77JPxs87pYpE"
+doge-o = "2FJPtjHmYZBAeFLudMHFgQAq5vsEMW6uXhc8TqtVZvMS"
+[programs.mainnet]
+dogegamecontract = "GAmedvouiMuUop6UUvGe8L5wdAQaSwXa77JPxs87pYpE"
+doge-o = "BQmZuoj4q3gU7Qzqi3siJ4R48Tj9uua3AMDhqTDNDdFu"
+
+[registry]
+url = "https://anchor.projectserum.com"
+
+[provider]
+cluster = "mainnet"
+wallet = "contractpk.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
